@@ -568,39 +568,39 @@ function doneCount(){return Object.keys(PROG.done).length}
 /* 非條文型題目 */
 function mk(id,t,a,others,w){return {id:id,t:t,a:a,o:[a].concat(others),w:w}}
 var G1=[
-mk("G1a","管理審查(第 9 章)在 PDCA 裡屬於哪一階段？","檢查(Check)",["規劃(Plan)","執行(Do)","行動(Act)"],"第 9 章績效評估是 Check：量測、稽核、管理審查都在這裡。"),
-mk("G1b","稽核發現是怎麼得出的？","把客觀證據對照稽核準則",["憑稽核員的經驗判斷","問受稽者同不同意","看文件上有沒有簽名"],"稽核三要素：準則、客觀證據、發現。發現就是證據對準則的結果。"),
-mk("G1c","客戶到供應商工廠進行稽核，屬於哪一種稽核？","第二方稽核",["第一方稽核","第三方稽核","驗證稽核"],"第一方內部、第二方客戶對供應商、第三方獨立機構或驗證機構。"),
-mk("G1d","ISO 19011 稽核實施階段，順序是？","開始會議、蒐集並查證資訊、產生發現、做出結論、結束會議",["蒐集並查證資訊、開始會議、做出結論、產生發現、結束會議","開始會議、產生發現、蒐集並查證資訊、結束會議、做出結論","結束會議、開始會議、蒐集並查證資訊、產生發現、做出結論"],"實施階段的順序固定：先開會，再蒐證，再產生發現，再下結論，最後結束會議。"),
-mk("G1e","內部稽核員稽核自己建立的流程，違反哪個稽核原則？","獨立性",["保密","誠信","公正表達"],"稽核員要與被稽核的活動無利害關係，才能客觀公正。"),
-mk("G1f","看到一個稽核情境，翻標準的有效第一步是？","先判斷事情屬於規劃、支援、營運、評估或改善，再找小節",["直接全文搜尋關鍵字","從第 4 章一條一條往下找","憑記憶選一個最像的條號"],"先定章再找節，開卷考試最省時間。"),
-mk("G1g","第 1 到 3 章可以直接當作不符合的依據嗎？","不能，它們是範圍、引用文件與用語",["可以，它們是通用要求","可以，只要寫進 NCR","只有第 3 章可以"],"可稽核的要求從第 4 章開始。")
+mk("G1a","稽核簡報上寫著：量測、內部稽核、管理審查都是在評估成果、決定哪裡要改。這一整類活動在 PDCA 循環裡屬於哪一階段？","檢查(Check)",["規劃(Plan)","執行(Do)","行動(Act)"],"第 9 章績效評估是 Check：量測、稽核、管理審查都在這裡。"),
+mk("G1b","你在現場看到作業員使用已過期的作業標準，問過班長、翻過紀錄，確認事實屬實。回辦公室寫稽核發現時，你的依據是什麼？","把客觀證據對照稽核準則",["憑稽核員的經驗判斷","問受稽者同不同意","看文件上有沒有簽名"],"稽核三要素：準則、客觀證據、發現。發現就是證據對準則的結果。"),
+mk("G1c","你是客戶端的品保工程師，下週要去一家供應商的工廠，檢查他們的製程與品質系統是否符合你公司的要求。這次稽核屬於哪一種？","第二方稽核",["第一方稽核","第三方稽核","驗證稽核"],"第一方內部、第二方客戶對供應商、第三方獨立機構或驗證機構。"),
+mk("G1d","你是稽核組長，今天抵達供應商現場。依照 ISO 19011，從一進門到離開，實施階段的正確順序是哪一個？","開始會議、蒐集並查證資訊、產生發現、做出結論、結束會議",["蒐集並查證資訊、開始會議、做出結論、產生發現、結束會議","開始會議、產生發現、蒐集並查證資訊、結束會議、做出結論","結束會議、開始會議、蒐集並查證資訊、產生發現、做出結論"],"實施階段的順序固定：先開會，再蒐證，再產生發現，再下結論，最後結束會議。"),
+mk("G1e","公司指派剛改版完包裝流程的組長，去稽核自己負責的包裝站。稽核經理要他迴避，這是為了守住哪一個稽核原則？","獨立性",["保密","誠信","公正表達"],"稽核員要與被稽核的活動無利害關係，才能客觀公正。"),
+mk("G1f","開卷考試裡出現情境：供應商沒有確認客戶交期就接單。你拿起標準，最省時間的第一步是什麼？","先判斷事情屬於規劃、支援、營運、評估或改善，再找小節",["直接全文搜尋關鍵字","從第 4 章一條一條往下找","憑記憶選一個最像的條號"],"先定章再找節，開卷考試最省時間。"),
+mk("G1g","你在現場發現受稽者沒有照標準第 3 章的某個用語定義來使用名詞，想直接寫成不符合報告。這樣寫可以嗎？","不能，它們是範圍、引用文件與用語",["可以，它們是通用要求","可以，只要寫進 NCR","只有第 3 章可以"],"可稽核的要求從第 4 章開始。")
 ];
 var G10=[
 mk("G10a","稽核員只抽了三張出貨單，其中一張缺放行簽核。最合適的下一步是？","擴大抽樣，確認是個案還是系統性",["直接開 Major","忽略，只有一張","請受稽者自己判斷嚴重程度"],"先確認範圍，才能支持正確的分級與結論。"),
-mk("G10b","受稽者口頭說上個月已做過檢討，稽核員應該？","要求看到紀錄或現場查證，口頭說明只當線索",["相信並記為符合","直接判不符合","請受稽者簽名保證"],"證據要能被客觀查證，口頭說明不夠。"),
-mk("G10c","不符合事實最適合在什麼時候和受稽者確認？","稽核進行中及結束會議前",["報告寄出之後","稽核員私下決定即可","不需要確認"],"事先確認事實，避免結束會議上才出現爭議。"),
-mk("G10d","結束會議要做什麼？","向受稽者陳述發現與結論，並說明後續追蹤",["第一次公布稽核計畫","與受稽者討論要不要採納發現","只交付報告不說明"],"結束會議的目的是讓受稽者瞭解發現與結論。"),
-mk("G10e","稽核員可以在稽核中提供具體的解決方案給受稽者嗎？","不應該，稽核員陳述發現，不提供顧問式解決方案",["可以，這樣更有效率","只要受稽者同意就可以","只有主導稽核員可以"],"提供解決方案會損及稽核的獨立性。"),
+mk("G10b","你問包裝站組長，上個月的客訴有沒有開檢討會，他說「有啊，大家都有講」，但現場沒有會議紀錄，也沒有簽到表。稽核員應該怎麼處理這句話？","要求看到紀錄或現場查證，口頭說明只當線索",["相信並記為符合","直接判不符合","請受稽者簽名保證"],"證據要能被客觀查證，口頭說明不夠。"),
+mk("G10c","你在現場發現一筆放行紀錄缺少簽核，打算把它寫成不符合。為了避免結束會議時受稽者才說「你看錯了」，這個事實最適合在什麼時候先跟對方確認？","稽核進行中及結束會議前",["報告寄出之後","稽核員私下決定即可","不需要確認"],"事先確認事實，避免結束會議上才出現爭議。"),
+mk("G10d","稽核最後一天下午，你拿著整理好的發現清單走進會議室，受稽者的主管都到齊了。這場會議你要做的事是什麼？","向受稽者陳述發現與結論，並說明後續追蹤",["第一次公布稽核計畫","與受稽者討論要不要採納發現","只交付報告不說明"],"結束會議的目的是讓受稽者瞭解發現與結論。"),
+mk("G10e","查到供應商的內部稽核有漏洞後，受稽者主管問你：「那你直接告訴我們怎麼改最快？」稽核員可以在稽核中提供具體的解決方案嗎？","不應該，稽核員陳述發現，不提供顧問式解決方案",["可以，這樣更有效率","只要受稽者同意就可以","只有主導稽核員可以"],"提供解決方案會損及稽核的獨立性。"),
 mk("G10g","抽查兩個部門的品質目標，A 部門有量測指標，B 部門沒有。稽核員目前最合適的做法是？","擴大查證其他部門，確認是個案還是普遍，再決定是否開不符合",["立刻對整間公司開 Major","因為只有一個部門，記為符合","請 B 部門自己補寫指標"],"只看到兩個樣本，不能直接推論整個系統；先確認範圍。"),
 mk("G10h","受稽者說校正報告放在另一棟辦公室，現場只看得到標籤。稽核員應該？","要求之後調閱校正報告或另約時間查證，取得證據前不下結論",["直接開不符合","相信標籤即可","請受稽者簽名保證"],"證據取得受限時，要找其他方式查證，不能憑推測。"),
 mk("G10i","抽查三筆放行紀錄，三筆都有品保課長簽名與日期，但其中一筆簽核日期晚於出貨日。最合適的做法是？","針對這一筆查證時序並擴大抽樣，確認是否為系統性問題",["三筆都有簽名，記為符合","三筆全部判不符合","忽略日期差異"],"簽名存在不代表放行發生在出貨前，要查證時序並確認範圍。"),
-mk("G10f","稽核抽樣的目的是？","用有代表性的樣本支持稽核結論",["確保每一筆資料都被檢查","隨便抽一些以節省時間","只抽有問題的樣本"],"稽核是抽樣活動，樣本要能支持結論。")
+mk("G10f","你只有半天時間，卻要檢查過去一年六百多張出貨紀錄，所以決定抽樣。這個抽樣動作的目的是什麼？","用有代表性的樣本支持稽核結論",["確保每一筆資料都被檢查","隨便抽一些以節省時間","只抽有問題的樣本"],"稽核是抽樣活動，樣本要能支持結論。")
 ];
 var G11=[
 mk("G11a","情境：卡尺校正標籤過期三個月仍使用於最終檢驗。哪一份陳述最好？","2026/11/3 品保室，卡尺 CAL-012 校正效期 2026/8/3 已過，仍用於最終檢驗，未見先前量測有效性評估。不符合 7.1.5.2",["校正做得不好，不符合品質要求","品保人員疏忽，應立即重新校正所有量具並加強教育訓練","量具管理有問題，違反 ISO 9001"],"好的陳述有日期地點編號的具體證據、精確條號、具體落差；其他兩個一個太籠統，一個有指責與解決方案。"),
 mk("G11b","情境：新進作業員缺訓練紀錄。哪一份陳述最好？","抽查 5 名新進作業員，其中 2 名上線三週仍無訓練與能力評估紀錄。要求 7.2 須保存能力證據，不符合 7.2",["人事管理不佳，違反 ISO 9001","建議人資補齊訓練紀錄，否則不符合 7.2","作業員能力不足，應重新培訓"],"要有抽樣數量與比例、精確條號，並避免解決方案與推測。"),
-mk("G11c","這份陳述缺什麼：『品保部抽驗紀錄不完整，不符合 ISO 9001。』","具體的客觀證據與精確條號",["解決方案","受稽者姓名","稽核員簽名"],"沒有日期、編號、數量，也沒有條號，無法重現。"),
-mk("G11d","NCR 不應該包含什麼？","矯正措施或解決方案的建議",["客觀證據","要求事項","範疇說明"],"稽核員陳述事實，措施由受稽者決定。"),
-mk("G11e","一份 NCR 同時描述量具校正過期與文件版本錯誤兩件事，應該？","拆成兩份，各自對應要求與證據",["合併寫並選較嚴重的條號","保留一份，兩個條號都寫","保留一份，只寫較重要的一件"],"一份 NCR 只對應一個不符合，方便追蹤與結案。"),
+mk("G11c","你在同事寫的 NCR 草稿裡看到這句：『品保部抽驗紀錄不完整，不符合 ISO 9001。』審閱時，你會指出這句缺少什麼？","具體的客觀證據與精確條號",["解決方案","受稽者姓名","稽核員簽名"],"沒有日期、編號、數量，也沒有條號，無法重現。"),
+mk("G11d","你在審閱一份 NCR 時，發現除了事實與要求，最後還有一段：「建議受稽者每月召開檢討會，並由課長簽核。」NCR 不應該包含的是哪一類內容？","矯正措施或解決方案的建議",["客觀證據","要求事項","範疇說明"],"稽核員陳述事實，措施由受稽者決定。"),
+mk("G11e","同一次稽核你看到兩件互不相關的事：量具校正過期、另一個站的作業標準版次錯誤。你想把它們寫在同一份 NCR 一次結案，該怎麼處理？","拆成兩份，各自對應要求與證據",["合併寫並選較嚴重的條號","保留一份，兩個條號都寫","保留一份，只寫較重要的一件"],"一份 NCR 只對應一個不符合，方便追蹤與結案。"),
 mk("G11g","一份 NCR 草稿寫著『品保人員不用心，沒按規定校正』。下一步應？","改寫成客觀事實：誰何時何地看到什麼、違反哪一條要求，去掉推測與指責",["保留，語氣強硬比較有力","加上『建議立刻處分』","直接送出"],"NCR 只陳述事實與要求，不含推測、指責與處置建議。"),
-mk("G11f","證據只有『聽說他們沒做』時，稽核員應？","繼續查證，找到可驗證的證據才成立",["直接開 NCR","記為改善機會","請受稽者承認即可"],"傳聞要用紀錄或現場查證支持，否則不能成為不符合依據。")
+mk("G11f","作業員私下對你說「聽說他們上週根本沒做首件檢驗」，但你沒看到任何紀錄，現場也沒有佐證。這種只有傳聞的情況，稽核員應該怎麼做？","繼續查證，找到可驗證的證據才成立",["直接開 NCR","記為改善機會","請受稽者承認即可"],"傳聞要用紀錄或現場查證支持，否則不能成為不符合依據。")
 ];
 
 /* 課程表 */
 function cardsFor(ch,pre){var l=LESS.filter(function(x){return x.ch===ch})[0];return l.items.filter(function(it){return !pre||pre.some(function(p){return it.h.indexOf(p)===0})})}
 function mcL(x){var ch=parseInt(x.ans,10);var all=Object.keys(CL).filter(function(k){return k!==x.ans});var ex=shuffle(all.filter(function(k){return parseInt(k,10)===ch})).slice(0,3);if(ex.length<3)ex=ex.concat(shuffle(all.filter(function(k){return ex.indexOf(k)<0})).slice(0,3-ex.length));return {id:x.id,t:"關鍵字「"+x.kw+"」對應哪一條？",a:x.ans,o:[x.ans].concat(ex),w:"這一條是 "+x.ans+" "+(CL[x.ans]||"")+"。"}}
-function covQs(cov,nL){var ss=S.filter(function(x){return inCov(x.a,cov)});var ls=shuffle(LOOK.filter(function(x){return inCov(x.ans,cov)})).slice(0,nL).map(mcL);return shuffle(ss.concat(ls).concat(shuffle(genQs(cov,2)).slice(0,3)).concat(genFind(cov).slice(0,3))).slice(0,12)}
+function covQs(cov,nL){var ss=shuffle(S.filter(function(x){return inCov(x.a,cov)})),g=genQs(cov,7),x=genFind(cov).slice(0,2);return shuffle(ss.slice(0,Math.max(0,12-g.length-x.length)).concat(g).concat(x)).slice(0,12)}
 var CHG=["6.3","8.2.4","8.3.6","8.5.6"];
 var DAYS=[
 {id:1,title:"地圖與稽核基礎",sum:"標準結構、稽核三要素、流程與原則",cards:function(){return cardsFor(0)},qs:function(){return G1}},
@@ -614,7 +614,7 @@ var DAYS=[
 {id:9,title:"第 9、10 章 績效與改善",sum:"量測、內稽、管理審查、矯正措施",cov:["9","10"],cards:function(){return cardsFor(9).concat(cardsFor(10))},qs:function(){return covQs(["9","10"],5)}},
 {id:10,title:"稽核流程與證據",sum:"規劃抽樣、蒐證、發現結論、結束會議",cards:function(){return cardsFor(90)},qs:function(){return G10}},
 {id:11,title:"NCR 寫作",sum:"四要素、範例對照、常見扣分寫法",cards:function(){return cardsFor(91)},qs:function(){return G11}},
-{id:12,title:"整合測驗",sum:"全部章節混合，只含已教內容",cards:function(){return []},qs:function(){return shuffle(S).slice(0,10).concat(shuffle(LOOK).slice(0,4).map(mcL))}},
+{id:12,title:"整合測驗",sum:"全部章節混合，只含已教內容",cards:function(){return []},qs:function(){return shuffle(shuffle(S).slice(0,8).concat(genQs(null,6)))}},
 {id:13,title:"迷你模擬考",sum:"計時作答，依領域計分",special:"mock"},
 {id:14,title:"錯題回補",sum:"依弱點回讀教材卡，再練",special:"weak"}
 ];
@@ -687,21 +687,21 @@ function numOf(it){return it.h.split(" ")[0]}
 function titleOf(it){var p=it.h.split(" ");p.shift();return p.join(" ")}
 function allCards(){var out=[];LESS.forEach(function(l){if(l.ch<4||l.ch>10)return;l.items.forEach(function(it){if(it.a&&it.e)out.push(it)})});return out}
 function uniq(a){var seen={},o=[];a.forEach(function(x){if(!seen[x]){seen[x]=1;o.push(x)}});return o}
+var SCENE={"4.1": "你到一家電鍍廠稽核，總經理說生意很穩。但你注意到近兩年有兩個大客戶轉單，環保法規也在加嚴。你想知道他們有沒有系統地掌握這類會影響品質的變化。", "4.2": "這家供應商同時服務汽車與電子客戶，還要面對環保局與員工代表。你想確認他們有沒有弄清楚：誰的要求會影響交貨品質。", "4.3": "品質手冊寫著「本公司不適用設計開發」，但現場角落有人正依客戶需求修改治具圖面。你想檢查這項排除站不站得住腳。", "4.4": "你要稽核包裝站，但這個站的前後有哪些站、每天看哪些指標，三位主管說法都不一樣。你想先弄清楚這個過程怎麼運作。", "5.1.1": "生產線月底趕出貨，有主管私下暗示檢驗員「先放過，數字補一補」。你想了解最高管理者對這種壓力的立場與實際作為。", "5.1.2": "一個重要客戶的交期連續三個月延誤，業務說客訴是品保的事，生產說交期是業務的事。你想確認高層有沒有讓各部門對客戶要求有一致的理解。", "5.2": "你在現場隨機問三位作業員公司的品質方針是什麼，兩人答不出來，一人說「牆上有貼」。你想檢查這份方針有沒有真正傳達並被理解。", "5.3": "出貨前發現疑慮時，作業員、領班與品保各說各話，不確定該聽誰的。你想查證職責與權限有沒有清楚界定。", "6.1": "公司剛導入一條全新的鍍層製程，管理者說「做了就知道」，沒人提過可能失敗的情境，也沒人談過能藉此爭取的客戶需求。你想檢查規劃階段有沒有面對不確定性。", "6.2": "看板上寫著「提升客戶滿意」，但月底沒有任何人更新數字，也沒人知道目標是多少。你想看目標有沒有被落實管理。", "6.3": "公司下個月要合併兩條產線並調整組織，只有口頭通知。你想確認這項改動有沒有事先考慮對品質系統的影響。", "7.1.2":"夜班一條線原本配置四人，最近因為缺工只剩兩人仍照常出貨，日報漏填率也變高。你想確認人力配置有沒有被評估過。", "7.1.3": "一台關鍵熱處理爐上個月才發生過非預期停機，牆上保養表最後一欄停在去年。你想知道設備有沒有被計畫性維護。", "7.1.4": "電鍍後的烘乾區夏天悶熱潮濕，作業員抱怨又累又煩，產品開始出現水痕。你想確認作業場所的條件有沒有被當成品質因素管理。", "7.1.5": "檢驗桌上一支卡尺的標籤日期已過期兩個月，但它剛剛被用來放行了一批貨。你想知道量測設備怎麼管，失準時後續怎麼處理。", "7.1.6": "公司唯一懂特殊鍍液調配的老師傅下個月退休，沒有書面做法，新人只能邊看邊學。你想確認他們有沒有保住這類關鍵知識。", "7.2": "一位新進作業員被派去操作特殊過程設備，主管說「他學得很快」，但你找不到任何訓練或考核紀錄。你想確認這個人是否被證明可以勝任。", "7.3": "你問一位包裝工人，漏看一個標籤會對客戶造成什麼後果，他聳聳肩說「不知道，反正後面有人會檢查」。你想探查員工對自身工作影響的認識。", "7.4": "客戶改了一項交貨規格，業務口頭告訴品保，品保以為生產知道了，結果現場沒人被通知。你想確認內外部的品質訊息有沒有被規劃怎麼傳遞。", "7.5": "你在現場拿起一份作業標準，版次是 B，但文管清單顯示最新版已經是 C。你想了解文件發行、更新與回收的管制。", "8.1": "一個新訂單有五道工序，但各站做法不一，也沒有一份文件說明這張單的規劃與管制重點。你想檢查生產前的營運規劃。", "8.2": "業務接到客戶的緊急訂單，當天口頭答應交期，生產兩天後才知道，客戶中途還改了規格。你想確認接單前有沒有審查自己做不做得到。", "8.3": "一個新產品開發案的設計圖已經交到生產，但你找不到設計階段的審查、驗證或客戶確認的紀錄。你想確認設計管制。", "8.4": "公司採購一項關鍵原料的供應商沒有任何評鑑紀錄，採購單上只寫品名與數量，沒有規格與檢驗要求。你想確認外部供應的管制。", "8.5.1": "你走到組裝線，作業員手上拿的不是最新的作業文件，量具沒有確認，也沒人知道這個站的人員需要什麼資格。你想確認現場生產條件有沒有被控制。", "8.5.2": "客戶回報某批號的零件有問題，你請公司找出這批成品用了哪些原料，他們翻了一小時還拼不出來。你想評估他們的追查能力。", "8.5.3": "客戶寄來一組專用治具放在倉庫角落，沒有標示、已經生鏽，也沒人通知客戶。你想確認這類不屬於公司的東西怎麼被保管。", "8.5.4": "成品倉庫的紙箱疊得很高，最下層的箱子已經變形，幾箱的防銹紙也破了。你想檢查成品放置期間有沒有被保護。", "8.5.5": "產品交給客戶半年後回報有異音要求維修，業務說「我先記著」，但沒有進入任何紀錄。你想確認出貨之後的服務怎麼受理。", "8.5.6": "現場悄悄把一款零件的供應來源換成另一家，品質認為「材質看起來一樣」，沒有通報也沒有試做。你想確認生產過程的改動有沒有被管制。", "8.6": "一批標示「待檢」的成品已被裝上出貨車，品管主管說「客戶急」，放行簽核欄是空的。你想確認出貨前的最後把關。", "8.7": "你在現場看到一個沒有標示的紙箱混在合格品旁邊，作業員說「那是有問題的，還沒處理」。你想確認這類產品怎麼被管制。", "9.1": "公司每月蒐集不良率、客訴件數與客戶評分，整理成表就歸檔，沒有任何人解讀這些數字。你想確認他們怎麼運用績效資料。", "9.2": "稽核員 A 負責稽核包裝站，他同時是該站的組長。你翻出去年的內部稽核報告，有三項缺失沒有結案紀錄。你想確認內部稽核有沒有正常運作。", "9.3": "管理審查的會議紀錄只有簡報投影片，沒有任何決議，也沒有人追蹤後續。你想了解這個會議最後有沒有決定什麼。", "10.1": "公司說「我們每年都在改善」，但你要看具體案件與來源時，只拿得出一份去年的提案單，之後沒有下文。你想了解持續改善怎麼運作。", "10.2": "同一個外觀不良的客訴半年內發生三次，每次都只是重工後出貨，矯正單的對策寫「加強宣導」。你想確認他們怎麼避免問題再發生。"};
+var CONF={"7.4": ["8.2", "5.1.2"], "8.2": ["7.4", "5.1.2"], "5.1.2": ["8.2", "7.4", "9.1"], "9.1": ["5.1.2", "9.3"], "9.3": ["9.1", "10.1"], "10.1": ["9.3", "10.2"], "10.2": ["8.7", "10.1"], "8.7": ["10.2", "8.6"], "8.6": ["8.7", "8.5.1"], "8.5.6": ["6.3", "8.2"], "6.3": ["8.5.6"], "7.1.5": ["8.5.1"], "8.5.1": ["7.1.5", "7.2", "8.6"], "7.2": ["7.3", "8.5.1"], "7.3": ["7.2", "5.1.1"], "5.1.1": ["7.3"], "8.5.4": ["8.5.3"], "8.5.3": ["8.5.4"], "6.1": ["4.1", "10.1"], "4.1": ["6.1"]};
+(function(){[["8.5.1","7.5"],["5.3","8.6"],["5.3","8.7"],["6.2","9.1"],["6.3","8.1"],["6.3","7.4"],["5.2","7.3"],["4.3","8.3"],["5.1.2","5.3"]].forEach(function(p){(CONF[p[0]]=CONF[p[0]]||[]).indexOf(p[1])<0&&CONF[p[0]].push(p[1]);(CONF[p[1]]=CONF[p[1]]||[]).indexOf(p[0])<0&&CONF[p[1]].push(p[0])})})();
+function pickD(pool,it,f){var me=numOf(it),bad=(CONF[me]||[]).slice();Object.keys(CONF).forEach(function(k){if(CONF[k].indexOf(me)>=0)bad.push(k)});var ch=parseInt(me,10);pool=pool.filter(function(x){return f(x).length>=10});
+  var cand=shuffle(pool.filter(function(x){return numOf(x)!==numOf(it)&&bad.indexOf(numOf(x))<0&&f(x)!==f(it)}));
+  var far=cand.filter(function(x){return parseInt(numOf(x),10)!==ch}),near=cand.filter(function(x){return parseInt(numOf(x),10)===ch});
+  var pick=far.slice(0,3);if(pick.length<3)pick=pick.concat(near.slice(0,3-pick.length));
+  var seen={},out=[];pick.forEach(function(x){var v=f(x);if(!seen[v]){seen[v]=1;out.push(v)}});return out}
 function genQs(cov,n){
-  var pool=allCards(),cs=pool.filter(function(it){var k=numOf(it);return cov?inCov(k,cov):isOpen(k)});
-  var out=[];
-  shuffle(cs).slice(0,n).forEach(function(it){
-    var ea=shuffle(uniq(pool.filter(function(x){return x.a!==it.a}).map(function(x){return x.a}))).slice(0,3);
-    out.push({n:numOf(it),id:"A"+numOf(it),t:"稽核「"+numOf(it)+" "+titleOf(it)+"」時，稽核員最可能問哪一句？",a:it.a,o:[it.a].concat(ea),w:"這句問的是 "+numOf(it)+" 的重點。可以調閱的證據："+it.e});
-  });
-  shuffle(cs).slice(0,n).forEach(function(it){
-    var ee=shuffle(uniq(pool.filter(function(x){return x.e!==it.e}).map(function(x){return x.e}))).slice(0,3);
-    out.push({n:numOf(it),id:"E"+numOf(it),t:"稽核「"+numOf(it)+" "+titleOf(it)+"」時，最該調閱哪些證據？",a:it.e,o:[it.e].concat(ee),w:"稽核員會這樣問："+it.a});
-  });
-  var ks=Object.keys(CL).filter(function(k){return cov?inCov(k,cov):isOpen(k)});
-  shuffle(ks).slice(0,n).forEach(function(k){
-    var ot=shuffle(uniq(Object.keys(CL).map(function(x){return CL[x]}).filter(function(t){return t!==CL[k]}))).slice(0,3);
-    out.push({n:k,id:"T"+k,t:"條號 "+k+" 管的是什麼？",a:CL[k],o:[CL[k]].concat(ot),w:k+" 是「"+CL[k]+"」。"});
+  var pool=allCards().filter(function(it){return SCENE[numOf(it)]}),cs=pool.filter(function(it){var k=numOf(it);return cov?inCov(k,cov):isOpen(k)});
+  var out=[],c=shuffle(cs),h=Math.ceil(c.length/2);
+  c.slice(0,n).forEach(function(it){
+    var ask=Math.random()<0.5;
+    if(ask)out.push({n:numOf(it),id:"A"+numOf(it),t:SCENE[numOf(it)]+" 你接下來最該問受稽者哪一句？",a:it.a,o:[it.a].concat(pickD(pool,it,function(x){return x.a})),w:"這個情境指向 "+numOf(it)+" "+titleOf(it)+"。稽核員會這樣問，並調閱："+it.e});
+    else if(it.e.length>=10)out.push({n:numOf(it),id:"E"+numOf(it),t:SCENE[numOf(it)]+" 你要調閱哪些證據來查證？",a:it.e,o:[it.e].concat(pickD(pool,it,function(x){return x.e})),w:"這個情境指向 "+numOf(it)+" "+titleOf(it)+"。稽核員會這樣問："+it.a});
   });
   return out}
 function emptyMsg(back){main.innerHTML='<div class="card"><p class="scn">這個模式需要先完成一些課程章節才有內容。先讀教材、做小測；或按下面的按鈕先開放全部章節。</p><div class="row"><button class="btn" id="eb">回上一頁</button><button class="btn ghost" id="eo">開放全部章節再試</button></div></div>';document.getElementById("eb").onclick=back;document.getElementById("eo").onclick=function(){OPEN_ALL=true;saveP();back()}}
@@ -720,7 +720,7 @@ function startMode(d,mode){
     if(mode==="scn")return shuffle(cov?S.filter(function(x){return inCov(x.a,cov)}):poolS()).slice(0,8);
     var sp=cov?S.filter(function(x){return inCov(x.a,cov)}):poolS();
     var lp=(cov?LOOK.filter(function(x){return inCov(x.ans,cov)}):poolL());
-    return shuffle(shuffle(sp).slice(0,5).concat(shuffle(lp).slice(0,3).map(mcL)).concat(shuffle(genQs(cov,3)).slice(0,4)).concat(genFind(cov).slice(0,4))).slice(0,12)}
+    return shuffle(shuffle(sp).slice(0,6).concat(genQs(cov,5).slice(0,4)).concat(genFind(cov).slice(0,4))).slice(0,12)}
   var title={ask:"稽核問答",scn:"情境題",find:"現象判定",mix:"混合一組"}[mode];
   function run(){var q=build();if(!q.length){emptyMsg(function(){dayView(id)});return}runQuiz(q,title,function(r){endCard(r,title,run,id)})}
   run()}
@@ -776,9 +776,13 @@ function dayQuiz(d,qs,retest){
 function runQuiz(qs,title,done){
   var i=0,wrong=[],right=0;
   function show(){var q=qs[i],o=shuffle(q.o);
-    main.innerHTML='<div class="card"><div class="meta"><span>'+esc(title)+'</span><span>第 '+(i+1)+' / '+qs.length+' 題</span></div><p class="scn">'+esc(q.t)+'</p><div class="opts" id="os">'+o.map(optBtn).join("")+'</div><div id="fb"></div></div>';
-    document.getElementById("os").onclick=function(e){var b=e.target.closest(".opt");if(!b||b.disabled)return;var g=o[+b.getAttribute("data-i")],ok=g===q.a;rec(q.id,ok);if(ok)right++;else wrong.push(q);
-      [].forEach.call(document.querySelectorAll(".opt"),function(x,k){x.disabled=true;if(o[k]===q.a)x.classList.add("ok");else if(x===b)x.classList.add("no")});
+    main.innerHTML='<div class="card"><div class="meta"><span>'+esc(title)+'</span><span>第 '+(i+1)+' / '+qs.length+' 題</span></div><p class="scn">'+esc(q.t)+'</p><div class="opts" id="os">'+o.map(function(c,k){return optBtn(c,k,true)}).join("")+'</div><div id="fb"></div></div>';
+    var hasT=o.some(function(c){return CL[c]}),hb=null,answered=false;
+    if(hasT){var mt=document.querySelector(".card .meta");var hr=document.createElement("div");hr.className="row";hr.style.margin="0 0 8px";hr.innerHTML='<button class="btn ghost" id="ht" style="padding:4px 10px"></button><span class="note">選項只給條號，像真的考試；卡住時可打開標題提示。</span>';mt.parentNode.insertBefore(hr,mt.nextSibling);hb=document.getElementById("ht");
+      var lab=function(){hb.textContent=HINT?"隱藏條文標題":"顯示條文標題"};lab();
+      hb.onclick=function(){if(answered)return;HINT=!HINT;[].forEach.call(document.querySelectorAll(".opt"),function(x,k){x.innerHTML=optIn(o[k],true)});lab()}}
+    document.getElementById("os").onclick=function(e){var b=e.target.closest(".opt");if(!b||b.disabled)return;var g=o[+b.getAttribute("data-i")],ok=g===q.a;rec(q.id,ok);if(ok)right++;else wrong.push(q);answered=true;
+      [].forEach.call(document.querySelectorAll(".opt"),function(x,k){x.innerHTML=optIn(o[k],false);x.disabled=true;if(o[k]===q.a)x.classList.add("ok");else if(x===b)x.classList.add("no")});
       var ans=CL[q.a]?chip(q.a)+" "+esc(CL[q.a]):esc(q.a);
       document.getElementById("fb").innerHTML='<div class="fb '+(ok?"ok":"no")+'"><b class="'+(ok?"ok":"no")+'">'+(ok?"正確":"不正確")+'</b> 答案 '+ans+'<br>'+esc(q.w)+'</div><div class="row"><button class="btn" id="nx">'+(i+1<qs.length?"下一題":"看結果")+'</button></div>';
       document.getElementById("nx").onclick=function(){i++;if(i<qs.length)show();else done({right:right,wrong:wrong,n:qs.length})}}}
@@ -822,7 +826,9 @@ function look(){
 
 /* ---- 情境判定 ---- */
 var lastS=null;
-function optBtn(c,i){return '<button class="opt" data-i="'+i+'">'+(CL[c]?chip(c)+'<span>'+esc(CL[c])+'</span>':'<span>'+esc(c)+'</span>')+'</button>'}
+var HINT=false;
+function optIn(c,hide){return CL[c]?chip(c)+((hide&&!HINT)?'':'<span>'+esc(CL[c])+'</span>'):'<span>'+esc(c)+'</span>'}
+function optBtn(c,i,hide){return '<button class="opt" data-i="'+i+'">'+optIn(c,hide)+'</button>'}
 function scn(){
   var ps=poolS();if(!ps.length){needLearn(scn);return}
   var q=pick(ps,lastS);lastS=q.id;var o=shuffle(q.o);
